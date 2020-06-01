@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home"
+        android:icon="@drawable/homeicon"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/nav_shop"
+        android:title="@string/shop"
+        android:icon="@drawable/shopicon"
+        android:orderInCategory="2"
+        />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/user"
+        android:icon="@drawable/usericon"
+        android:orderInCategory="3"
+        />
+
+    <item
+        android:id="@+id/nav_social"
+        android:title="@string/social"
+        android:icon="@drawable/socialicon"
+        android:orderInCategory="4"
+        />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settingsicon"
+        android:orderInCategory="5"
+        />
+
+    <!--    code for the navbar, btw, had to migrate this project to AndroidX for it to work with
+    constraint layout, heres a link to the tutorial i used:
+    https://medium.com/@nirvikbasnet/androidx-bottomnavigationbar-with-constraint-layout-and-fragments-90f7deffff9e-->
+</menu>

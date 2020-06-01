@@ -1,0 +1,442 @@
+[
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_dollar.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xhdpi\\ic_dollar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_shop.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dollar.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_dollar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradleorangerectangle.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradleorangerectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_list_item_shop.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\layout_list_item_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_enter_from_left.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\anim\\enter_from_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_8.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_8.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_homeicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\homeicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_converarrow.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\converarrow.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_exit_to_right.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\anim\\exit_to_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_1.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circular_button_cradleorange.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\circular_button_cradleorange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pb_drawable_1.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\pb_drawable_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_change_password.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_check.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_check.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circular_button_cradlegreen.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\circular_button_cradlegreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\rectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_run.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xxhdpi\\ic_run.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_bmi.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_bmi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_0.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_0.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_gradient.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\background_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_7.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_7.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gift.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\gift.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_enter_first.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\enter_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_settingsicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\settingsicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_1.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\rectangle_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shopiconwhite.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\shopiconwhite.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_10.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_10.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_exit.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-mdpi\\ic_exit.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_dollar.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-anydpi\\ic_dollar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_dollar.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xxhdpi\\ic_dollar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_list_item.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\layout_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_gradient_3.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\background_gradient_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_9.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_9.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_background.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\home_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_dollar.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-mdpi\\ic_dollar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_trophyicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\trophyicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gold_pot.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\ic_gold_pot.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_6.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_6.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_profile_picture.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_edit_profile_picture.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_in_out.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\anim\\fade_in_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_bio.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_edit_bio.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_check.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-anydpi\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_socialicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\socialicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_run.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-mdpi\\ic_run.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_usericon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\usericon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\font_roboto.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\font\\roboto.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dietplanicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\dietplanicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sneakers.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\sneakers.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_check.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xhdpi\\ic_check.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradlegreenrectangle.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradlegreenrectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_check.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xxhdpi\\ic_check.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_workoutrectangle_border.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\workoutrectangle_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_4.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_4.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_navbar_background.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\navbar_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_exit.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xxhdpi\\ic_exit.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_workoutroutineicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\workoutroutineicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_exit.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-anydpi\\ic_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_enter_from_right.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\anim\\enter_from_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register1.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_register1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradleorange_rectangle_border.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradleorange_rectangle_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_walking.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\walking.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_3.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_3.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_healthy.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xhdpi\\ic_healthy.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_gradient_2.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\background_gradient_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\font\\rubik.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_support.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_support.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_web_view.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_web_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recycler_view_adapter.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_recycler_view_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_workoutrectangle.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\workoutrectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradlegreenrectangle_border.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradlegreenrectangle_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_run.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xhdpi\\ic_run.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_exit.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_exit.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_exit_to_left.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\anim\\exit_to_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_shopicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\shopicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_2.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_2.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greetingrectangle.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\greetingrectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_run.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-anydpi-v24\\ic_run.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_social.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_social.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\font_righteous.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\font\\righteous.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_healthy_2_1.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xhdpi\\healthy_2_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_5.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_5.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_start.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_bg.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_default_photo.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\default_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ribbonicon.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-v24\\ribbonicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_credits.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_credits.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_check.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-mdpi\\ic_check.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navbar.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\menu\\bottom_navbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_prof_icon_default.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_run.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_run.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_exit.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-xhdpi\\ic_exit.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    }
+]

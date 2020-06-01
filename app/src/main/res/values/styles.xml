@@ -1,0 +1,64 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:letterSpacing">
+            0.02
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="username_em">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.02
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+        <item name="fontFamily">@font/rubik</item>
+
+    </style>
+
+<!--    healthy header-->
+    <style name="healthy">
+
+        <item name="android:textSize">
+            28sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="stepCount">
+        <item name="android:textSize">
+            24sp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+</resources>

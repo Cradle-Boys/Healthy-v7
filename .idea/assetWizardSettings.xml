@@ -96,6 +96,12 @@
                                       </entry>
                                     </map>
                                   </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="foregroundImage" value="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_7\app\src\main\res\drawable-xhdpi\ic_healthy.png" />
+                                      <entry key="outputName" value="ic_healthy_launcher" />
+                                    </map>
+                                  </option>
                                 </PersistentState>
                               </value>
                             </entry>
@@ -169,11 +175,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

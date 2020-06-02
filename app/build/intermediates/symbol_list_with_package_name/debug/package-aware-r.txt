@@ -1495,6 +1495,7 @@ drawable ic_exit
 drawable ic_gold_coin
 drawable ic_gold_pot
 drawable ic_healthy
+drawable ic_healthy_launcher_background
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1548,6 +1549,7 @@ drawable prof_icon_9
 drawable prof_icon_default
 drawable rectangle
 drawable rectangle_1
+drawable rectangle_swhite_cradleorange
 drawable ribbonicon
 drawable selection_band_overlay
 drawable settingsicon
@@ -1561,7 +1563,7 @@ drawable tooltip_frame_light
 drawable trophyicon
 drawable usericon
 drawable walking
-drawable workout_rectangle_hollow
+drawable workout_rectangle_light
 drawable workoutrectangle
 drawable workoutrectangle_border
 drawable workoutroutineicon
@@ -1839,6 +1841,7 @@ id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id recycler_parent
 id registerLayout
 id register_ca
 id right
@@ -2113,6 +2116,9 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_navbar
+mipmap ic_healthy_launcher
+mipmap ic_healthy_launcher_foreground
+mipmap ic_healthy_launcher_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

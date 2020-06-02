@@ -39,26 +39,6 @@
             app:layout_constraintStart_toStartOf="@+id/themeImageView"
             app:layout_constraintTop_toTopOf="@+id/themeImageView" />
 
-        <TextView
-            android:id="@+id/bioTextView"
-            android:layout_width="0dp"
-            android:layout_height="93dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="224dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/cradlegreenrectangle"
-            android:fontFamily="@font/roboto"
-            android:gravity="center"
-            android:padding="25dp"
-            android:text="THIS IS WHERE WE PUT BIO"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <ImageView
             android:id="@+id/profilePic_imageView"
             android:layout_width="120dp"
@@ -69,43 +49,70 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/prof_icon_default" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="0dp"
-            android:backgroundTint="@color/cradleGreen"
-            android:drawableLeft="@drawable/trophyicon"
-            android:fontFamily="@font/rubik"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:text="ACHIEVEMENTS"
-            android:textSize="27.5sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bioTextView" />
-
-        <Button
-            android:id="@+id/shopButton"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="75dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="30dp"
-            android:backgroundTint="@color/cradleGreen"
-            android:drawableLeft="@drawable/shopiconwhite"
-            android:fontFamily="@font/rubik"
-            android:paddingLeft="80dp"
-            android:paddingRight="90dp"
-            android:text="SHOP"
-            android:textSize="27.5sp"
+            android:layout_height="272dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="223dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/bioTextView"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:background="@drawable/cradlegreenrectangle"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="THIS IS WHERE WE PUT BIO"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:backgroundTint="@color/cradleGreen"
+                android:drawableLeft="@drawable/trophyicon"
+                android:fontFamily="@font/rubik"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="ACHIEVEMENTS"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bioTextView" />
+
+            <Button
+                android:id="@+id/shopButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/cradleGreen"
+                android:drawableLeft="@drawable/shopiconwhite"
+                android:fontFamily="@font/rubik"
+                android:paddingLeft="80dp"
+                android:paddingRight="90dp"
+                android:text="SHOP"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+        </LinearLayout>
 
         <FrameLayout
             android:id="@+id/edit_bio_fragment_container"

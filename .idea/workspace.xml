@@ -3,8 +3,9 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="pixel" />
+        <device id="pixel_3a_xl" />
         <device id="Nexus 7" />
+        <device id="pixel" />
         <device id="pixel_3" />
         <device id="tv_1080p" />
         <device id="pixel_3a" />
@@ -171,7 +172,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-01T23:36:03.103Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-02T01:34:15.040Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />

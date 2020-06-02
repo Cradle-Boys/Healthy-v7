@@ -26,6 +26,11 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
     private ArrayList<Integer> mImages;
     private Context mcontext;
     SharedPreferences sharedPreferences;
+    int totalGold;
+
+    public interface OnItemClickListener{
+        void onDeleteClick(int position);
+    }
 
     public ShopRecyclerViewAdapter(Context mcontext, ArrayList<String> mImageTexts, ArrayList<Integer> mImages) {
         this.mImageTexts = mImageTexts;
@@ -52,8 +57,21 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
             public void onClick(View v) {
                 Log.i(TAG,"onClicL: clicked on: "+ mImageTexts.get(position));
                 sharedPreferences = mcontext.getSharedPreferences("saved",Context.MODE_PRIVATE);
-                sharedPreferences.edit().putInt("profile_pic",mImages.get(position)).apply();
-                Toast.makeText(mcontext, mImageTexts.get(position), Toast.LENGTH_SHORT).show();
+
+
+                totalGold=sharedPreferences.getInt("totalGold",0);
+                if(totalGold>=1000){
+                    sharedPreferences.edit().putInt("totalGold",totalGold-1000).apply();
+                    mImages.remove(position);
+                    mImageTexts.remove(position);
+                    notifyDataSetChanged();
+                    sharedPreferences.edit().putInt("profile_pic",mImages.get(position)).apply();
+                    Toast.makeText(mcontext, "You bought "+mImageTexts.get(position), Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(mcontext, "Not enough gold!", Toast.LENGTH_SHORT).show();
+                }
+
+
 //                ((AppCompatActivity)mcontext).getSupportFragmentManager().popBackStack();
             }
         });
@@ -75,6 +93,7 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
             image = itemView.findViewById(R.id.image);
             imageName = itemView.findViewById(R.id.image_name);
             parentLayout = itemView.findViewById(R.id.parent_layout);
+
         }
     }
 

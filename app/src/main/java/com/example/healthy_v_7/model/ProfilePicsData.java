@@ -11,8 +11,8 @@ public class ProfilePicsData {
 
     public static ArrayList<String> mImageTexts = new ArrayList<String>() {
         {
-            add("Zeroth");
-            add("First");
+            add("Ben");
+            add("Alice");
 //            add("Second");
 //            add("Third");
         }

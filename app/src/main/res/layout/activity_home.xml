@@ -159,10 +159,10 @@
                 android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
-                android:layout_height="9dp"
-                android:layout_marginStart="50dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="224dp"
-                android:layout_marginEnd="50dp"
+                android:layout_marginEnd="20dp"
                 android:progressDrawable="@drawable/pb_drawable_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -200,32 +200,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/workoutButton"
-                android:layout_width="317dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_marginTop="300dp"
-                android:background="@drawable/workoutrectangle"
-                android:drawableLeft="@drawable/workoutroutineicon"
-                android:fontFamily="@font/righteous"
-                android:letterSpacing="0.04"
-                android:paddingLeft="10dp"
-                android:scaleType="fitCenter"
-                android:text="Workout Routine"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="27sp"
-                android:textStyle="bold"
-                app:backgroundTint="@null"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <LinearLayout
-                android:layout_width="317dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="408dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -234,26 +212,26 @@
 
 
                 <!--        android:background="@drawable/greetingrectangle"-->
-                <Button
-                    android:id="@+id/dietButton"
-                    android:layout_width="200dp"
-                    android:layout_height="80dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/workoutrectangle"
-                    android:drawableLeft="@drawable/dietplanicon"
-                    android:fontFamily="@font/righteous"
-                    android:paddingLeft="5dp"
-                    android:scaleType="fitCenter"
-                    android:text="Diet Plan"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="27sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@null" />
+<!--                <Button-->
+<!--                    android:id="@+id/dietButton"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@drawable/workoutrectangle"-->
+<!--                    android:drawableLeft="@drawable/dietplanicon"-->
+<!--                    android:fontFamily="@font/righteous"-->
+<!--                    android:paddingLeft="5dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:text="Diet Plan"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="27sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:backgroundTint="@null" />-->
 
                 <LinearLayout
                     android:id="@+id/bmiButton"
-                    android:layout_width="107dp"
+                    android:layout_width="150dp"
                     android:layout_height="80dp"
                     android:background="@drawable/workoutrectangle"
                     android:fontFamily="@font/righteous"
@@ -282,7 +260,67 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+
+                    android:id="@+id/calorie_layout"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/workout_rectangle_hollow"
+                    android:fontFamily="@font/righteous"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="17dp"
+                    app:backgroundTint="@null">
+
+                    <TextView
+                        android:id="@+id/calories_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:fontFamily="@font/righteous"
+                        android:text="2323"
+                        android:textColor="@android:color/black"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/righteous"
+                        android:text="calories burned"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
             </LinearLayout>
+
+            <Button
+                android:id="@+id/workoutButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="395dp"
+                android:background="@drawable/workoutrectangle"
+                android:drawableLeft="@drawable/workoutroutineicon"
+                android:fontFamily="@font/righteous"
+                android:letterSpacing="0.04"
+                android:paddingLeft="10dp"
+                android:scaleType="fitCenter"
+                android:text="Workout Routine"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <FrameLayout

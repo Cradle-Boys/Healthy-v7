@@ -7,16 +7,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.example.healthy_v_7.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SocialFragment#newInstance} factory method to
+ * Use the {@link NutritionFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SocialFragment extends Fragment {
+public class NutritionFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -26,7 +29,7 @@ public class SocialFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public SocialFragment() {
+    public NutritionFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +42,8 @@ public class SocialFragment extends Fragment {
      * @return A new instance of fragment SocialFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SocialFragment newInstance(String param1, String param2) {
-        SocialFragment fragment = new SocialFragment();
+    public static NutritionFragment newInstance(String param1, String param2) {
+        NutritionFragment fragment = new NutritionFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +64,12 @@ public class SocialFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_social, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_nutrition, container, false);
+        WebView webView = rootView.findViewById(R.id.nutrition_web_view);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        webView.loadUrl("https://cradle-boys.github.io/Healthy-web/diet-plan-pages/diet-plans.html");
+        return rootView;
     }
 }

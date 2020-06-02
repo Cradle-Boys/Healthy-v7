@@ -86,9 +86,9 @@ public class EditProfilePicFragment extends Fragment {
         return rootView;
     }
 
-    public boolean indexExists(final List list, final int index) {
-        return index >= 0 && index < list.size();
-    }
+//    public boolean indexExists(final List list, final int index) {
+//        return index >= 0 && index < list.size();
+//    }
 
     public void checkPossible(){
         int counter=4;

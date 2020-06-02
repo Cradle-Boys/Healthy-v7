@@ -8,16 +8,20 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dollar.png.flat",
-        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_dollar.png"
-    },
-    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradleorangerectangle.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradleorangerectangle.xml"
     },
     {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dollar.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_dollar.png"
+    },
+    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_list_item_shop.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\layout_list_item_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_workout_rectangle_hollow.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\workout_rectangle_hollow.xml"
     },
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_enter_from_left.xml.flat",
@@ -160,6 +164,10 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_9.png"
     },
     {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_nutrition.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_nutrition.xml"
+    },
+    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_background.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\home_background.xml"
     },
@@ -184,12 +192,12 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\prof_icon_6.png"
     },
     {
-        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_profile_picture.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_edit_profile_picture.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_in_out.xml.flat",
@@ -332,6 +340,10 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_web_view.xml"
     },
     {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_nutrition.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\ic_nutrition.png"
+    },
+    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recycler_view_adapter.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\activity_recycler_view_adapter.xml"
     },
@@ -378,10 +390,6 @@
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_run.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-anydpi-v24\\ic_run.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_social.xml.flat",
-        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_social.xml"
     },
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",

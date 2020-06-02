@@ -29,7 +29,7 @@ import com.example.healthy_v_7.panels.HomeFragment;
 import com.example.healthy_v_7.panels.ProfileFragment;
 import com.example.healthy_v_7.panels.SettingsFragment;
 import com.example.healthy_v_7.panels.ShopFragment;
-import com.example.healthy_v_7.panels.SocialFragment;
+import com.example.healthy_v_7.panels.NutritionFragment;
 import com.example.healthy_v_7.web_views.WebViewActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -57,8 +57,10 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
     int todayAddedGold;
     int totalGold;
     int initialGold;
+    int caloriesBurned;
     ProgressBar progressBar;
     TextView greetingTextView;
+
 
     long todayDate;
     long tomorrowDate;
@@ -68,6 +70,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
     Button dietButton;
     LinearLayout bmiButton;
 
+    TextView caloriesTextView;
     //get user data
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -89,7 +92,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Toast.makeText(this, "Steps are reset PER MINUTE for demo purposes. Points are retained.", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "For demo purposes, steps are reset every 1 minute.", Toast.LENGTH_LONG).show();
 
         stepsTextView = findViewById(R.id.stepsTextView);
         pointsTextView = findViewById(R.id.pointsTextView);
@@ -97,9 +100,10 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         progressBar = findViewById(R.id.progressBar);
         greetingTextView = findViewById(R.id.greetingTextView);
         workoutButton = findViewById(R.id.workoutButton);
-        dietButton = findViewById(R.id.dietButton);
+//        dietButton = findViewById(R.id.dietButton);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bmiButton = findViewById(R.id.bmiButton);
+        caloriesTextView = findViewById(R.id.calories_text_view);
 //        bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_3);
 
         //for invisibility and blur
@@ -182,8 +186,8 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
                 case R.id.nav_profile:
                     selectedFragment = new ProfileFragment();
                     break;
-                case R.id.nav_social:
-                    selectedFragment = new SocialFragment();
+                case R.id.nav_nutrition:
+                    selectedFragment = new NutritionFragment();
                     break;
                 case R.id.nav_settings:
                     selectedFragment = new SettingsFragment();
@@ -232,15 +236,15 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             }
         });
 
-        dietButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, WebViewActivity.class);
-                intent.putExtra("page", "diet");
-                startActivity(intent);
-                overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right);
-            }
-        });
+//        dietButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(HomeActivity.this, WebViewActivity.class);
+//                intent.putExtra("page", "diet");
+//                startActivity(intent);
+//                overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right);
+//            }
+//        });
     }
 
     public void lookUpFirstName() {
@@ -319,6 +323,9 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             todayAddedGold=todaySteps;
             totalGold= initialGold +todayAddedGold;
             sharedPreferences.edit().putInt("totalGold",totalGold).apply();
+
+            caloriesBurned = todaySteps/30;
+            caloriesTextView.setText(caloriesBurned+"");
 
             if(CalendarUtil.getNow()>=tomorrowDate){
                 sharedPreferences.edit().putInt("initialGold",totalGold).apply();//initial points for the next day

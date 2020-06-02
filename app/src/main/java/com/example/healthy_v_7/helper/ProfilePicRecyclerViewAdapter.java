@@ -55,7 +55,10 @@ public class ProfilePicRecyclerViewAdapter extends RecyclerView.Adapter<ProfileP
                 sharedPreferences = mcontext.getSharedPreferences("saved",Context.MODE_PRIVATE);
                 sharedPreferences.edit().putInt("profile_pic",mImages.get(position)).apply();
 //                Toast.makeText(mcontext, mImageTexts.get(position), Toast.LENGTH_SHORT).show();
-                Toast.makeText(mcontext, "profile picture changed!", Toast.LENGTH_SHORT).show();
+                if(position>=0){
+                    Toast.makeText(mcontext, "profile picture changed!", Toast.LENGTH_SHORT).show();
+                }
+
                 ((AppCompatActivity)mcontext).getSupportFragmentManager().popBackStack();
             }
         });

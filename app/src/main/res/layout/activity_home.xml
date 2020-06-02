@@ -186,7 +186,9 @@
 
             <TextView
                 android:id="@+id/greetingTextView"
-                android:layout_width="289dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_height="61dp"
                 android:layout_marginTop="240dp"
                 android:gravity="center"

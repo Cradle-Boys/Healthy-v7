@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dollar.png.flat",
-        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_dollar.png"
-    },
-    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradleorangerectangle.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradleorangerectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dollar.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_dollar.png"
     },
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_list_item_shop.xml.flat",

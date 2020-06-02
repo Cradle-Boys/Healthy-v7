@@ -263,7 +263,14 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
                     name=sharedPreferences.getString("firstName","User");
                 }
             }
-            greetingTextView.setText("Hello, " + name);
+            int spacePos = name.indexOf(" ");
+            String truncateName="";
+            if(spacePos>0){
+                truncateName = name.substring(0,spacePos);
+            }else{
+                truncateName=name;
+            }
+            greetingTextView.setText("Hello, " + truncateName);
         }
     }
 
@@ -334,7 +341,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
         }else{
             milestoneSteps=totalSteps;
-            tomorrowDate= CalendarUtil.getNowPlusMinute();
+            tomorrowDate= CalendarUtil.getTomorrow();//change here for testing
             sharedPreferences.edit().putLong("tomorrow",tomorrowDate).apply();
             sharedPreferences.edit().putBoolean("isSameDay",true).apply();
             sharedPreferences.edit().putInt("milestoneSteps",milestoneSteps).apply();

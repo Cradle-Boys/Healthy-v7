@@ -175,19 +175,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_7\app" />
-      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_6\app\src\main\res\layout" />
       <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_6\app\src\main\res\drawable" />
-      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_6\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_5\app" />
+      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_4\app\src\main\res\drawable" />
+      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_4\app" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.healthy_v_4" />
@@ -203,11 +202,12 @@
       <recent name="com.example.healthy_v_6.helper" />
       <recent name="com.example.healthy_v_6.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_7\app\src\main\res\drawable" />
       <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_7\app" />
+      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_6\app\src\main\res\layout" />
       <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_6\app\src\main\res\drawable" />
-      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_4\app\src\main\res\drawable" />
-      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_4\app" />
+      <recent name="C:\Users\Dawn\AndroidStudioProjects\beginner\Healthy_v_6\app\src\main\res\drawable-v24" />
     </key>
   </component>
   <component name="RunDashboard">

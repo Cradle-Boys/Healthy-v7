@@ -1488,9 +1488,11 @@ drawable greetingrectangle
 drawable healthy_2_1
 drawable home_background
 drawable homeicon
+drawable ic_cash
 drawable ic_check
 drawable ic_dollar
 drawable ic_exit
+drawable ic_gold_coin
 drawable ic_gold_pot
 drawable ic_healthy
 drawable ic_launcher_background
@@ -1650,6 +1652,7 @@ id buttonPanel
 id calculateButton
 id cancel_action
 id cancel_button
+id cash_image
 id center
 id center_horizontal
 id center_vertical

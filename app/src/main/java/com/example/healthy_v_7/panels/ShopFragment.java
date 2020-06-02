@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.healthy_v_7.R;
 import com.example.healthy_v_7.helper.ShopRecyclerViewAdapter;
@@ -89,6 +90,17 @@ public class ShopFragment extends Fragment {
                 ShopData.mImages);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        prefListener =
+                new SharedPreferences.OnSharedPreferenceChangeListener() {
+                    public void onSharedPreferenceChanged(SharedPreferences prefs,
+                                                          String key) {
+                        if (key.equals("totalGold")) {
+                            goldTextView.setText("Gold: "+sharedPreferences.getInt("totalGold",0));
+                        }
+                    }
+                };
+        sharedPreferences.registerOnSharedPreferenceChangeListener(prefListener);
 
         return rootView;
     }

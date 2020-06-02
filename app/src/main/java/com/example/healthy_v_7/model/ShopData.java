@@ -11,14 +11,14 @@ public class ShopData {
 
     public static ArrayList<String> mImageTexts = new ArrayList<String>() {
         {
-            add("Tyler - 1,000 gold");
-            add("Karen - 1,000 gold");
-            add("Ashley - 1,000 gold");
-            add("Primo - 1,000 gold");
-            add("Dan - 1,000 gold");
-            add("Ada - 1,000 gold");
-            add("Jorge - 1,000 gold");
-            add("Obi - 1,000 gold");
+            add("Tyler - 1,000");
+            add("Karen - 1,000");
+            add("Ashley - 1,000");
+            add("Primo - 1,000");
+            add("Dan - 1,000");
+            add("Ada - 1,000");
+            add("Jorge - 1,000");
+            add("Obi - 1,000");
         }
     };
     public static ArrayList<Integer> mImages = new ArrayList<Integer>() {

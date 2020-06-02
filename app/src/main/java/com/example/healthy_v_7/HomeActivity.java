@@ -399,5 +399,4 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
-
 }

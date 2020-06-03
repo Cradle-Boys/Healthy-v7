@@ -93,7 +93,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Toast.makeText(this, "For demo purposes, steps are reset every 1 minute.", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "For demo purposes, steps are reset every 1 minute.", Toast.LENGTH_LONG).show();
 
         stepsTextView = findViewById(R.id.stepsTextView);
         pointsTextView = findViewById(R.id.pointsTextView);

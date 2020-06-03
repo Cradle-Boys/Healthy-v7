@@ -1,4 +1,4 @@
-#Wed Jun 03 11:23:53 CST 2020
+#Wed Jun 03 11:26:47 CST 2020
 base.0=C\:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

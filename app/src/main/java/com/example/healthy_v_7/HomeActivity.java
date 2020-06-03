@@ -85,6 +85,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
     //data
     SharedPreferences sharedPreferences;
+    SharedPreferences.OnSharedPreferenceChangeListener prefListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +105,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bmiButton = findViewById(R.id.bmiButton);
         caloriesTextView = findViewById(R.id.calories_text_view);
-//        bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_3);
+
 
         //for invisibility and blur
         homeConstraintLayout = findViewById(R.id.homeNoNavConstraintLayout);
@@ -112,6 +113,27 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
 
         sharedPreferences = getSharedPreferences("saved",Context.MODE_PRIVATE);
+
+        //ONLY FOR INSTANT THEME CHANGE
+        prefListener =
+                new SharedPreferences.OnSharedPreferenceChangeListener() {
+                    public void onSharedPreferenceChanged(SharedPreferences prefs,
+                                                          String key) {
+                        if (key.equals("SunrayTheme")) {
+                            bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_3);
+                        }else if(key.equals("CreamTheme")){
+                            bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_4_white);
+                        }
+                    }
+                };
+        sharedPreferences.registerOnSharedPreferenceChangeListener(prefListener);
+
+        //FOR PERSISTING THEME CHANGE
+        if(sharedPreferences.getBoolean("SunrayTheme",false)){
+            bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_3);
+        }else if(sharedPreferences.getBoolean("CreamTheme",false)){
+            bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_4_white);
+        }
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         todaySteps = 0;//for testing
@@ -130,7 +152,6 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         //test
         frameLayout = findViewById(R.id.bmi_fragment_container);
 
-
     }
 
     @Override
@@ -140,7 +161,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
         if (count > 0) {
             getSupportFragmentManager().popBackStack();
-            Toast.makeText(this, count + "", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, count + "", Toast.LENGTH_SHORT).show(); STACK COUNT
             for (int i = 0; i < count; ++i) {
                 getSupportFragmentManager().popBackStack();
             }
@@ -286,15 +307,15 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
     public void progressBarFiller() {
 
-        progressBar.setMax(100);//sets progress bar from 0 to 100
+        progressBar.setMax(500);//sets progress bar from 0 to 500
 
         Sensor countSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
 
         //FOR NO PHONE WITH NO SENSOR JUST TO TEST
         if (countSensor == null) {
             Toast.makeText(this, "Sensor not found!", Toast.LENGTH_SHORT).show();
-            progressBar.setProgress(211);
-            int totalGold = sharedPreferences.getInt("totalGold",1000);
+            progressBar.setProgress(0);
+            int totalGold = sharedPreferences.getInt("totalGold",3000);
             sharedPreferences.edit().putInt("totalGold",totalGold).apply();
         }
         //FOR PHONE WITH SENSOR
@@ -306,7 +327,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
                 public void run() {
 
                     progressBar.setProgress(todaySteps);
-                    if (todaySteps == 100) {
+                    if (todaySteps == 500) {
                         t.cancel();
                     }
                 }
@@ -325,23 +346,27 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             tomorrowDate=sharedPreferences.getLong("tomorrow",0);
             milestoneSteps=sharedPreferences.getInt("milestoneSteps",0);
             initialGold =sharedPreferences.getInt("initialGold",0);
-
             todaySteps=totalSteps-milestoneSteps;
             todayAddedGold=todaySteps;
-            totalGold= initialGold +todayAddedGold;
+            totalGold= initialGold + todayAddedGold;
+            boolean removeGold =sharedPreferences.getBoolean("removeGold",false);
+            if(removeGold){
+                totalGold=totalGold-1000;
+                sharedPreferences.edit().putBoolean("removeGold",false);
+            }
             sharedPreferences.edit().putInt("totalGold",totalGold).apply();
 
             caloriesBurned = todaySteps/30;
             caloriesTextView.setText(caloriesBurned+"");
 
             if(CalendarUtil.getNow()>=tomorrowDate){
-                sharedPreferences.edit().putInt("initialGold",totalGold).apply();//initial points for the next day
+                sharedPreferences.edit().putInt("initialGold",totalGold).apply();//initial points for the next day, using commit to avoid race conditions
                 sharedPreferences.edit().putBoolean("isSameDay",false).apply();
             }
 
         }else{
             milestoneSteps=totalSteps;
-            tomorrowDate= CalendarUtil.getTomorrow();//change here for testing
+            tomorrowDate= CalendarUtil.getTomorrow();//change here for testing, now getNowPlusMinute for faster resets
             sharedPreferences.edit().putLong("tomorrow",tomorrowDate).apply();
             sharedPreferences.edit().putBoolean("isSameDay",true).apply();
             sharedPreferences.edit().putInt("milestoneSteps",milestoneSteps).apply();
@@ -398,7 +423,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         if (countSensor != null) {
             sensorManager.registerListener(this, countSensor, SensorManager.SENSOR_DELAY_FASTEST);
         } else {
-//            Toast.makeText(this, "Sensor not found!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Sensor not found!", Toast.LENGTH_SHORT).show();
         }
     }
 

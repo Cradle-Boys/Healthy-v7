@@ -26,7 +26,7 @@ public class CreditsActivity extends AppCompatActivity {
         webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("https://cradle-boys.github.io/Healthy-web/profile-page.html");
+        webView.loadUrl("https://cradle-boys.github.io/Healthy-web/about-us-pages/about-us-page-main.html");
     }
     @Override
     public void finish() {

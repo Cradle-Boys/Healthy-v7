@@ -1437,6 +1437,7 @@ drawable avd_show_password
 drawable background_gradient
 drawable background_gradient_2
 drawable background_gradient_3
+drawable background_gradient_4_white
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1504,6 +1505,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_nutrition
 drawable ic_run
+drawable ic_shopee_small
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp

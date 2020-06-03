@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\layout\\fragment_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradleorangerectangle.xml.flat",
-        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradleorangerectangle.xml"
-    },
-    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_dollar.png.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-hdpi\\ic_dollar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cradleorangerectangle.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\cradleorangerectangle.xml"
     },
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_list_item_shop.xml.flat",
@@ -200,6 +200,10 @@
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_gradient_4_white.xml.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\background_gradient_4_white.xml"
+    },
+    {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_dollar.png.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-mdpi\\ic_dollar.png"
     },
@@ -254,6 +258,10 @@
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_check.xml.flat",
         "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable-anydpi\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_shopee_small.png.flat",
+        "source": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\src\\main\\res\\drawable\\ic_shopee_small.png"
     },
     {
         "merged": "C:\\Users\\Dawn\\AndroidStudioProjects\\beginner\\Healthy_v_7\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",

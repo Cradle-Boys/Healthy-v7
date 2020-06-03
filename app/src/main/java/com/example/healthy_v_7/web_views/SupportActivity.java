@@ -9,6 +9,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -34,11 +35,9 @@ public class SupportActivity extends AppCompatActivity {
         Log.i("TAG",String.valueOf(timeAtButtonClick));
         long tenSecondsInMillis = 1000*10;
 
-//        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime()+AlarmManager.INTERVAL_DAY,AlarmManager.INTERVAL_DAY,pendingIntent);
-        alarmManager.set(AlarmManager.RTC_WAKEUP,timeAtButtonClick+tenSecondsInMillis,pendingIntent);
+        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime()+AlarmManager.INTERVAL_DAY,AlarmManager.INTERVAL_DAY,pendingIntent);
+//        alarmManager.set(AlarmManager.RTC_WAKEUP,timeAtButtonClick+tenSecondsInMillis,pendingIntent);
         Log.i("TAG","reminder set!");
-
-
 
 
         WebView webView = findViewById(R.id.supportWebView);

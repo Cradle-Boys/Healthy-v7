@@ -69,9 +69,9 @@ public class SettingsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_settings, container, false);
-        Button logoutButton = (Button) rootView.findViewById(R.id.logoutButton);
-        Button supportButton = (Button) rootView.findViewById(R.id.supportButton);
-        Button changePasswordButton = (Button) rootView.findViewById(R.id.changePasswordButton);
+        Button logoutButton = rootView.findViewById(R.id.logoutButton);
+        Button supportButton = rootView.findViewById(R.id.supportButton);
+        Button changePasswordButton = rootView.findViewById(R.id.changePasswordButton);
         Button creditsButton = rootView.findViewById(R.id.credits_button);
 
         supportButton.setOnClickListener(new View.OnClickListener() {

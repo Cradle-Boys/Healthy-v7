@@ -105,7 +105,7 @@ public class ProfileFragment extends Fragment {
                                                           String key) {
                         if (key.equals("bio")) {
                             Toast.makeText(getActivity(), "bio changed", Toast.LENGTH_SHORT).show();
-                            bioTextView.setText(sharedPreferences.getString("bio","put bio here"));
+                            bioTextView.setText(sharedPreferences.getString("bio","bio here"));
                         }else if(key.equals("profile_pic")){
                             profileImageView.setImageResource(sharedPreferences.getInt("profile_pic",R.drawable.prof_icon_0));
                         }

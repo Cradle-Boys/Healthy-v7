@@ -20,8 +20,8 @@ public class ShopData {
             add("Ada - 1,000");
             add("Jorge - 1,000");
             add("Obi - 1,000");
-            add("Sunray Theme 2000");
-            add("Cream Theme 2000");
+            add("Theme: Sunray 2000");
+            add("Theme: Cream 2000");
         }
     };
     public static ArrayList<Integer> mImages = new ArrayList<Integer>() {

@@ -63,7 +63,7 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
                 }else if(position==9||position==10){
                     totalGold=sharedPreferences.getInt("totalGold",0);
                     if(totalGold>=2000){
-                        sharedPreferences.edit().putInt("totalGold",totalGold-2000).apply();//for instant UI update
+                        sharedPreferences.edit().putInt("totalGold",(totalGold-2000)).apply();//for instant UI update
                         if(position==9){
                             sharedPreferences.edit().putBoolean("SunrayTheme",true).apply();
                             sharedPreferences.edit().putBoolean("CreamTheme",false).apply();

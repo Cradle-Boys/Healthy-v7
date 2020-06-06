@@ -120,9 +120,13 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
                     public void onSharedPreferenceChanged(SharedPreferences prefs,
                                                           String key) {
                         if (key.equals("SunrayTheme")) {
-                            bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_3);
+                            if(sharedPreferences.getBoolean("SunrayTheme",false)){
+                                bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_3);
+                            }
                         }else if(key.equals("CreamTheme")){
-                            bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_4_white);
+                            if(sharedPreferences.getBoolean("CreamTheme",false)){
+                                bottomNavigationView.setBackgroundResource(R.drawable.background_gradient_4_white);
+                            }
                         }
                     }
                 };
@@ -315,11 +319,12 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         if (countSensor == null) {
             Toast.makeText(this, "Sensor not found!", Toast.LENGTH_SHORT).show();
             progressBar.setProgress(0);
-            int totalGold = sharedPreferences.getInt("totalGold",3000);
+            int totalGold = sharedPreferences.getInt("totalGold",6000);
             sharedPreferences.edit().putInt("totalGold",totalGold).apply();
         }
         //FOR PHONE WITH SENSOR
         else {
+//            sharedPreferences.edit().putInt("initialGold",initialGold+6250).apply();just for getting more coins
             final Timer t = new Timer();
             TimerTask tt = new TimerTask() {
 
@@ -348,12 +353,20 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             initialGold =sharedPreferences.getInt("initialGold",0);
             todaySteps=totalSteps-milestoneSteps;
             todayAddedGold=todaySteps;
-            totalGold= initialGold + todayAddedGold;
+
             boolean removeGold =sharedPreferences.getBoolean("removeGold",false);
+            boolean removeMoreGold =sharedPreferences.getBoolean("removeMoreGold",false);
             if(removeGold){
-                totalGold=totalGold-1000;
-                sharedPreferences.edit().putBoolean("removeGold",false);
+                sharedPreferences.edit().putInt("initialGold",initialGold-1000).apply();
+                initialGold=sharedPreferences.getInt("initialGold",0);
+                sharedPreferences.edit().putBoolean("removeGold",false).apply();
             }
+            if(removeMoreGold){
+                sharedPreferences.edit().putInt("initialGold",initialGold-2000).apply();
+                initialGold=sharedPreferences.getInt("initialGold",0);
+                sharedPreferences.edit().putBoolean("removeMoreGold",false).apply();
+            }
+            totalGold= initialGold + todayAddedGold;
             sharedPreferences.edit().putInt("totalGold",totalGold).apply();
 
             caloriesBurned = todaySteps/30;

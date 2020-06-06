@@ -97,7 +97,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
         stepsTextView = findViewById(R.id.stepsTextView);
         pointsTextView = findViewById(R.id.pointsTextView);
-        dailyAveTextView = findViewById(R.id.dailyAveTextView);
+//        dailyAveTextView = findViewById(R.id.dailyAveTextView);
         progressBar = findViewById(R.id.progressBar);
         greetingTextView = findViewById(R.id.greetingTextView);
         workoutButton = findViewById(R.id.workoutButton);
@@ -424,7 +424,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
 
         stepsTextView.setText(String.valueOf(todaySteps));
         pointsTextView.setText(String.valueOf(totalGold));
-        dailyAveTextView.setText("Daily average: " + todaySteps);
+//        dailyAveTextView.setText("Daily average: " + todaySteps);
 
     }
 

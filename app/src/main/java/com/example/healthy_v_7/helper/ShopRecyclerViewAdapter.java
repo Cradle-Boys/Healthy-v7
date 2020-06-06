@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.healthy_v_7.R;
+import com.example.healthy_v_7.model.ShopData;
 
 import java.util.ArrayList;
 
@@ -57,14 +58,35 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
             @Override
             public void onClick(View v) {
 
+//                else if(position==9||position==10){
+//                    totalGold=sharedPreferences.getInt("totalGold",0);
+//                    if(totalGold>=2000){
+//                        sharedPreferences.edit().putInt("totalGold",(totalGold-2000)).apply();//for instant UI update
+//                        if(position==9){
+//                            sharedPreferences.edit().putBoolean("SunrayTheme",true).apply();
+//                            sharedPreferences.edit().putBoolean("CreamTheme",false).apply();
+//                        }else{
+//                            sharedPreferences.edit().putBoolean("CreamTheme",true).apply();
+//                            sharedPreferences.edit().putBoolean("SunrayTheme",false).apply();
+//                        }
+//                        sharedPreferences.edit().putBoolean("removeMoreGold",true).apply();
+//                        mImages.remove(position);
+//                        mImageTexts.remove(position);
+//                        notifyDataSetChanged();
+//                    }else{
+//                        Toast.makeText(mcontext, "Not enough gold!", Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+
+
                 Log.i(TAG,"onClicL: clicked on: "+ mImageTexts.get(position));
                 if(position==0){
                     Toast.makeText(mcontext, "Not available at the moment", Toast.LENGTH_SHORT).show();
-                }else if(position==9||position==10){
+                }else if(ShopData.mImageTexts.get(position).equals("Theme: Sunray 2000")||ShopData.mImageTexts.get(position).equals("Theme: Cream 2000")){
                     totalGold=sharedPreferences.getInt("totalGold",0);
                     if(totalGold>=2000){
                         sharedPreferences.edit().putInt("totalGold",(totalGold-2000)).apply();//for instant UI update
-                        if(position==9){
+                        if(ShopData.mImageTexts.get(position).equals("Theme: Sunray 2000")){
                             sharedPreferences.edit().putBoolean("SunrayTheme",true).apply();
                             sharedPreferences.edit().putBoolean("CreamTheme",false).apply();
                         }else{
@@ -78,7 +100,7 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
                     }else{
                         Toast.makeText(mcontext, "Not enough gold!", Toast.LENGTH_SHORT).show();
                     }
-                }else{
+                } else{
                     totalGold=sharedPreferences.getInt("totalGold",0);
                     if(totalGold>=1000){
                         sharedPreferences.edit().putInt("totalGold",totalGold-1000).apply();//for instant UI update
@@ -95,7 +117,7 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
 
 //                ((AppCompatActivity)mcontext).getSupportFragmentManager().popBackStack();
                 }
-                
+
             }
         });
     }

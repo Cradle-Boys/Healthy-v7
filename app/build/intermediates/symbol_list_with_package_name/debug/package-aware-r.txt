@@ -1692,7 +1692,6 @@ id credits_webVew
 id custom
 id customPanel
 id cut
-id dailyAveTextView
 id dark
 id date_picker_actions
 id decor_content_parent

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.example.healthy_v_7.web_views.CreditsActivity"></activity>
-        <activity android:name="com.example.healthy_v_7.helper.ProfilePicRecyclerViewAdapter" />
+        <activity android:name="com.example.healthy_v_7.helper.AchievementsRecyclerViewAdapter" />
         <activity android:name="com.example.healthy_v_7.authentication.ChangePasswordActivity" />
         <activity android:name="com.example.healthy_v_7.web_views.SupportActivity" />
         <activity android:name="com.example.healthy_v_7.web_views.WebViewActivity" />

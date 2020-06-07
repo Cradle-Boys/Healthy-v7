@@ -12,16 +12,16 @@ public class ShopData {
     public static ArrayList<String> mImageTexts = new ArrayList<String>() {
         {
             add("1 Shopee coin 10,000");
-            add("Tyler - 1,000");
-            add("Karen - 1,000");
-            add("Ashley - 1,000");
-            add("Primo - 1,000");
-            add("Dan - 1,000");
-            add("Ada - 1,000");
-            add("Jorge - 1,000");
-            add("Obi - 1,000");
-            add("Theme: Sunray 2000");
-            add("Theme: Cream 2000");
+            add("Tyler - 3,000");
+            add("Karen - 3,000");
+            add("Ashley - 3,000");
+            add("Primo - 3,000");
+            add("Dan - 3,000");
+            add("Ada - 3,000");
+            add("Jorge - 3,000");
+            add("Obi - 3,000");
+            add("Sunset Theme 15000");
+            add("Cream Theme 15000");
         }
     };
     public static ArrayList<Integer> mImages = new ArrayList<Integer>() {

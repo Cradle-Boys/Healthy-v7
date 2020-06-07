@@ -1469,6 +1469,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable converarrow
+drawable cradle_green_border_hollow
 drawable cradlegreenrectangle
 drawable cradlegreenrectangle_border
 drawable cradleorange_rectangle_border
@@ -1489,6 +1490,14 @@ drawable greetingrectangle
 drawable healthy_2_1
 drawable home_background
 drawable homeicon
+drawable ic_ach_baby_footprint
+drawable ic_ach_cash
+drawable ic_ach_coin
+drawable ic_ach_fast_run
+drawable ic_ach_moneybag
+drawable ic_ach_rocket
+drawable ic_ach_run
+drawable ic_ach_treasure
 drawable ic_cash
 drawable ic_check
 drawable ic_dollar
@@ -1615,6 +1624,8 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id achievementsButton
+id achievements_recycler_view
 id action0
 id action_bar
 id action_bar_activity_content
@@ -2046,6 +2057,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_achievements
 layout fragment_bmi
 layout fragment_edit_bio
 layout fragment_edit_profile_picture
@@ -2055,6 +2067,7 @@ layout fragment_profile
 layout fragment_settings
 layout fragment_shop
 layout layout_list_item
+layout layout_list_item_achievements
 layout layout_list_item_shop
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

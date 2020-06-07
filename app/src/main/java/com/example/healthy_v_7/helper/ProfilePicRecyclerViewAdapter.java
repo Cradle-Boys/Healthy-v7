@@ -36,14 +36,14 @@ public class ProfilePicRecyclerViewAdapter extends RecyclerView.Adapter<ProfileP
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ProfilePicRecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_list_item, parent, false);
-        ViewHolder holder = new ViewHolder(view);
+        ProfilePicRecyclerViewAdapter.ViewHolder holder = new ProfilePicRecyclerViewAdapter.ViewHolder(view);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ProfilePicRecyclerViewAdapter.ViewHolder holder, final int position) {
         Log.d(TAG,"onBindViewHolder called");
         holder.image.setImageResource(mImages.get(position));
         holder.imageName.setText(mImageTexts.get(position));
@@ -58,7 +58,6 @@ public class ProfilePicRecyclerViewAdapter extends RecyclerView.Adapter<ProfileP
                 if(position>=0){
                     Toast.makeText(mcontext, "profile picture changed!", Toast.LENGTH_SHORT).show();
                 }
-
                 ((AppCompatActivity)mcontext).getSupportFragmentManager().popBackStack();
             }
         });
@@ -82,6 +81,4 @@ public class ProfilePicRecyclerViewAdapter extends RecyclerView.Adapter<ProfileP
             parentLayout = itemView.findViewById(R.id.parent_layout);
         }
     }
-
-
 }

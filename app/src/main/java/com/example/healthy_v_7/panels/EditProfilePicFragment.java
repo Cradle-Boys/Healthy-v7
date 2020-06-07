@@ -13,10 +13,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.healthy_v_7.R;
+import com.example.healthy_v_7.helper.AchievementsRecyclerViewAdapter;
 import com.example.healthy_v_7.helper.ProfilePicRecyclerViewAdapter;
 import com.example.healthy_v_7.model.ProfilePicsData;
-
-import java.util.List;
 
 
 /**

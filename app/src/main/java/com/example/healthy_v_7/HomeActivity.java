@@ -319,12 +319,13 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         if (countSensor == null) {
             Toast.makeText(this, "Sensor not found!", Toast.LENGTH_SHORT).show();
             progressBar.setProgress(0);
-            int totalGold = sharedPreferences.getInt("totalGold",6000);
+            int totalGold = sharedPreferences.getInt("totalGold",30000);
             sharedPreferences.edit().putInt("totalGold",totalGold).apply();
         }
         //FOR PHONE WITH SENSOR
         else {
-//            sharedPreferences.edit().putInt("initialGold",initialGold+6250).apply();just for getting more coins
+//            just for getting more coins
+//            sharedPreferences.edit().putInt("initialGold",initialGold+46250).apply();
             final Timer t = new Timer();
             TimerTask tt = new TimerTask() {
 
@@ -357,12 +358,12 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             boolean removeGold =sharedPreferences.getBoolean("removeGold",false);
             boolean removeMoreGold =sharedPreferences.getBoolean("removeMoreGold",false);
             if(removeGold){
-                sharedPreferences.edit().putInt("initialGold",initialGold-1000).apply();
+                sharedPreferences.edit().putInt("initialGold",initialGold-3000).apply();
                 initialGold=sharedPreferences.getInt("initialGold",0);
                 sharedPreferences.edit().putBoolean("removeGold",false).apply();
             }
             if(removeMoreGold){
-                sharedPreferences.edit().putInt("initialGold",initialGold-2000).apply();
+                sharedPreferences.edit().putInt("initialGold",initialGold-15000).apply();
                 initialGold=sharedPreferences.getInt("initialGold",0);
                 sharedPreferences.edit().putBoolean("removeMoreGold",false).apply();
             }
@@ -384,7 +385,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             sharedPreferences.edit().putBoolean("isSameDay",true).apply();
             sharedPreferences.edit().putInt("milestoneSteps",milestoneSteps).apply();
             if(sharedPreferences.getBoolean("firstTime",true)){
-                sharedPreferences.edit().putInt("initialGold",0).apply();
+                sharedPreferences.edit().putInt("initialGold",20000).apply();//first run, for testing
                 sharedPreferences.edit().putBoolean("firstTime",false).apply();
             }
 

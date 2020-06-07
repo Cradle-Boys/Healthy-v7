@@ -33,10 +33,10 @@ public class SupportActivity extends AppCompatActivity {
 
         long timeAtButtonClick = System.currentTimeMillis();
         Log.i("TAG",String.valueOf(timeAtButtonClick));
-        long tenSecondsInMillis = 1000*10;
+        long tenSecondsInMillis = 1000*20;
 
-        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime()+AlarmManager.INTERVAL_DAY,AlarmManager.INTERVAL_DAY,pendingIntent);
-//        alarmManager.set(AlarmManager.RTC_WAKEUP,timeAtButtonClick+tenSecondsInMillis,pendingIntent);
+//        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime()+AlarmManager.INTERVAL_DAY,AlarmManager.INTERVAL_DAY,pendingIntent);
+        alarmManager.set(AlarmManager.RTC_WAKEUP,timeAtButtonClick+tenSecondsInMillis,pendingIntent);
         Log.i("TAG","reminder set!");
 
 

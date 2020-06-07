@@ -40,6 +40,7 @@ public class ProfileFragment extends Fragment {
     TextView bioTextView;
     ImageView profileImageView;
     Button shopButton;
+    Button achievementsButton;
     BottomNavigationView bottomNavigationView;
 
     SharedPreferences sharedPreferences;
@@ -77,6 +78,17 @@ public class ProfileFragment extends Fragment {
     }
 
     public void setListeners(){
+
+        achievementsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.edit_profilepic_fragment_container, new AchievementsFragment())
+                        .addToBackStack("previousFragment")
+                        .commit();
+            }
+        });
+
 
         bioTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,7 +144,9 @@ public class ProfileFragment extends Fragment {
         bioTextView = rootView.findViewById(R.id.bioTextView);
         profileImageView = rootView.findViewById(R.id.profilePic_imageView);
         shopButton = rootView.findViewById(R.id.shopButton);
+        achievementsButton = rootView.findViewById(R.id.achievementsButton);
         bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
+
 
         sharedPreferences = getActivity().getSharedPreferences("saved",Context.MODE_PRIVATE);
         bioTextView.setText(sharedPreferences.getString("bio","put bio here"));

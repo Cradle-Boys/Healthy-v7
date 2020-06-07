@@ -82,11 +82,11 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
                 Log.i(TAG,"onClicL: clicked on: "+ mImageTexts.get(position));
                 if(position==0){
                     Toast.makeText(mcontext, "Not available at the moment", Toast.LENGTH_SHORT).show();
-                }else if(ShopData.mImageTexts.get(position).equals("Theme: Sunray 2000")||ShopData.mImageTexts.get(position).equals("Theme: Cream 2000")){
+                }else if(ShopData.mImageTexts.get(position).equals("Sunset Theme 15000")||ShopData.mImageTexts.get(position).equals("Cream Theme 15000")){
                     totalGold=sharedPreferences.getInt("totalGold",0);
-                    if(totalGold>=2000){
-                        sharedPreferences.edit().putInt("totalGold",(totalGold-2000)).apply();//for instant UI update
-                        if(ShopData.mImageTexts.get(position).equals("Theme: Sunray 2000")){
+                    if(totalGold>=15000){
+                        sharedPreferences.edit().putInt("totalGold",(totalGold-15000)).apply();//for instant UI update
+                        if(ShopData.mImageTexts.get(position).equals("Sunset Theme 15000")){
                             sharedPreferences.edit().putBoolean("SunrayTheme",true).apply();
                             sharedPreferences.edit().putBoolean("CreamTheme",false).apply();
                         }else{
@@ -94,16 +94,18 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
                             sharedPreferences.edit().putBoolean("SunrayTheme",false).apply();
                         }
                         sharedPreferences.edit().putBoolean("removeMoreGold",true).apply();
+                        Toast.makeText(mcontext, "You bought "+mImageTexts.get(position), Toast.LENGTH_SHORT).show();
                         mImages.remove(position);
                         mImageTexts.remove(position);
                         notifyDataSetChanged();
+
                     }else{
                         Toast.makeText(mcontext, "Not enough gold!", Toast.LENGTH_SHORT).show();
                     }
                 } else{
                     totalGold=sharedPreferences.getInt("totalGold",0);
-                    if(totalGold>=1000){
-                        sharedPreferences.edit().putInt("totalGold",totalGold-1000).apply();//for instant UI update
+                    if(totalGold>=3000){
+                        sharedPreferences.edit().putInt("totalGold",totalGold-3000).apply();//for instant UI update
                         sharedPreferences.edit().putBoolean("removeGold",true).apply();
                         sharedPreferences.edit().putInt("profile_pic",mImages.get(position)).apply();
                         Toast.makeText(mcontext, "You bought "+mImageTexts.get(position), Toast.LENGTH_SHORT).show();

@@ -338,7 +338,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
                     }
                 }
             };
-            t.schedule(tt, 0, 500);//update time every half second
+            t.schedule(tt, 0, 1000);//update time every second
         }
 
     }
@@ -385,7 +385,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
             sharedPreferences.edit().putBoolean("isSameDay",true).apply();
             sharedPreferences.edit().putInt("milestoneSteps",milestoneSteps).apply();
             if(sharedPreferences.getBoolean("firstTime",true)){
-                sharedPreferences.edit().putInt("initialGold",20000).apply();//first run, for testing
+                sharedPreferences.edit().putInt("initialGold",25000).apply();//first run, for testing
                 sharedPreferences.edit().putBoolean("firstTime",false).apply();
             }
 

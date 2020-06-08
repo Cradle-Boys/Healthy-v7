@@ -67,6 +67,16 @@ public class ChangePasswordActivity extends AppCompatActivity {
                             confirmationTextView.animate().alpha(0).setDuration(2000).setInterpolator(new AccelerateInterpolator()).start();
                         }
                     }).start();
+                }else if((confirmNewPass.length()<=6)){
+                    confirmationTextView.setTextColor(0XFFB53737);
+                    confirmationTextView.setBackgroundColor(0XFFFFFFFF);
+                    confirmationTextView.setText("Please enter more than 6 characters");
+                    confirmationTextView.animate().alpha(1).setDuration(1000).setInterpolator(new DecelerateInterpolator()).withEndAction(new Runnable() {
+                        @Override
+                        public void run() {
+                            confirmationTextView.animate().alpha(0).setDuration(2000).setInterpolator(new AccelerateInterpolator()).start();
+                        }
+                    }).start();
                 }else{
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -91,7 +101,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                 confirmationTextView.setBackgroundColor(0XFFFFFFFF);
 
                                 Log.w("tag", "createUserWithEmail:failure", task.getException());
-                                confirmationTextView.setText("Error: Your password must have at least 6 characters");
+                                confirmationTextView.setText("Database error. Try again later");
                                 confirmationTextView.animate().alpha(1).setDuration(200).setInterpolator(new DecelerateInterpolator()).withEndAction(new Runnable() {
                                     @Override
                                     public void run() {

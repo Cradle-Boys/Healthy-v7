@@ -8,6 +8,9 @@
         <item name="android:statusBarColor">@color/statusBarColor</item>
         <item name="android:textAllCaps">false</item>
     </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    </style>
 
     <style name="label">
         <item name="android:textSize">

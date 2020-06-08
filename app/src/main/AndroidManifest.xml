@@ -3,7 +3,8 @@
     package="com.example.healthy_v_7">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_healthy_launcher"
@@ -11,34 +12,36 @@
         android:roundIcon="@mipmap/ic_healthy_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.healthy_v_7.web_views.CreditsActivity"></activity>
-        <activity android:name="com.example.healthy_v_7.helper.AchievementsRecyclerViewAdapter" />
-        <activity android:name="com.example.healthy_v_7.authentication.ChangePasswordActivity" />
-        <activity android:name="com.example.healthy_v_7.web_views.SupportActivity" />
-        <activity android:name="com.example.healthy_v_7.web_views.WebViewActivity" />
-        <activity android:name="com.example.healthy_v_7.authentication.RegisterActivity1" />
-        <activity android:name="com.example.healthy_v_7.authentication.StartActivity">
+        <activity android:name=".web_views.CreditsActivity" />
+        <activity android:name=".helper.AchievementsRecyclerViewAdapter" />
+        <activity android:name=".authentication.ChangePasswordActivity" />
+        <activity android:name=".web_views.SupportActivity" />
+        <activity android:name=".web_views.WebViewActivity" />
+        <activity android:name=".authentication.RegisterActivity1" />
+        <activity
+            android:name=".helper.SplashScreen"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.healthy_v_7.HomeActivity" />
+        <activity android:name=".authentication.StartActivity"/>
+        <activity android:name=".HomeActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <receiver android:name="com.example.healthy_v_7.helper.ReminderBroadcast" />
-
-        <receiver android:name="com.example.healthy_v_7.helper.BootReceiver"
+        <receiver android:name=".helper.ReminderBroadcast" />
+        <receiver
+            android:name=".helper.BootReceiver"
             android:enabled="false">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

@@ -32,13 +32,16 @@
         <activity android:name="com.example.healthy_v_7.web_views.SupportActivity" />
         <activity android:name="com.example.healthy_v_7.web_views.WebViewActivity" />
         <activity android:name="com.example.healthy_v_7.authentication.RegisterActivity1" />
-        <activity android:name="com.example.healthy_v_7.authentication.StartActivity" >
+        <activity
+            android:name="com.example.healthy_v_7.helper.SplashScreen"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.healthy_v_7.authentication.StartActivity" />
         <activity android:name="com.example.healthy_v_7.HomeActivity" />
 
         <meta-data

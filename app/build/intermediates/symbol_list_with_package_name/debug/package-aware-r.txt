@@ -884,6 +884,7 @@ color gradientCenterColor
 color gradientEndColor
 color gradientSolidColor
 color gradientStartColor
+color healthyBackground
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color lighter
@@ -1438,6 +1439,7 @@ drawable background_gradient
 drawable background_gradient_2
 drawable background_gradient_3
 drawable background_gradient_4_white
+drawable background_splashscreen
 drawable bmi_outline
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1489,6 +1491,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable greetingrectangle
 drawable healthy_2_1
+drawable healthy_splash_test_small
 drawable home_background
 drawable homeicon
 drawable ic_ach_baby_footprint
@@ -1686,6 +1689,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id circleProgressBar
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2039,6 +2043,7 @@ layout activity_credits
 layout activity_home
 layout activity_recycler_view_adapter
 layout activity_register1
+layout activity_splash_screen
 layout activity_start
 layout activity_support
 layout activity_web_view
@@ -2545,6 +2550,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
+style SplashTheme
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar

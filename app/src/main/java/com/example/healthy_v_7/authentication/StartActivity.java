@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.healthy_v_7.HomeActivity;
@@ -41,6 +42,7 @@ public class StartActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     ConstraintLayout constraintLayout;
     GoogleSignInClient mGoogleSignInClient;
+    ProgressBar circleProgressBar;
 
     //  RC can be any value since it's going to get changed
     private static int RC_SIGN_IN = 12312;
@@ -55,6 +57,7 @@ public class StartActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.emailLoginEditText);
         inputPassword = findViewById(R.id.passwordLoginEditText);
         constraintLayout = findViewById(R.id.constraintLayout);
+        circleProgressBar = findViewById(R.id.circleProgressBar);
 
         setButtonListeners();
         setGoogleSignIn();
@@ -78,6 +81,7 @@ public class StartActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                circleProgressBar.setVisibility(View.VISIBLE);
                 if (!(inputEmail.getText().toString().equals("") || inputPassword.getText().toString().equals(""))) {
                     mAuth.signInWithEmailAndPassword(inputEmail.getText().toString(),
                             inputPassword.getText().toString())
@@ -89,12 +93,14 @@ public class StartActivity extends AppCompatActivity {
                                         Log.d("tag", "signInWithEmail:success");
                                         FirebaseUser user = mAuth.getCurrentUser();
                                         updateUI(user);
+                                        circleProgressBar.setVisibility(View.INVISIBLE);
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w("tag", "signInWithEmail:failure", task.getException());
                                         Toast.makeText(getBaseContext(),
                                                 Objects.requireNonNull(task.getException()).toString(),
                                                 Toast.LENGTH_SHORT).show();
+                                        circleProgressBar.setVisibility(View.INVISIBLE);
 //                            updateUI(null);
 
                                     }
@@ -102,6 +108,7 @@ public class StartActivity extends AppCompatActivity {
                             });
                 }else{
                     Toast.makeText(StartActivity.this, "Enter email and password!", Toast.LENGTH_SHORT).show();
+                    circleProgressBar.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -123,6 +130,7 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.googleRegisterButton:
+                        circleProgressBar.setVisibility(View.VISIBLE);
                         signIn();
                         break;
                     // ...

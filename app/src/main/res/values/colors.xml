@@ -21,4 +21,6 @@
 <!--    for theme-->
     <color name="black">#000</color>
     <color name="white">#FFF</color>
+<!--for bg/splash screen-->
+    <color name="healthyBackground">#FFF2E2</color>
 </resources>

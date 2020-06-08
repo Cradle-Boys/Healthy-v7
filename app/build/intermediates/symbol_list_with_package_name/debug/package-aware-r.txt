@@ -1438,6 +1438,7 @@ drawable background_gradient
 drawable background_gradient_2
 drawable background_gradient_3
 drawable background_gradient_4_white
+drawable bmi_outline
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1765,9 +1766,9 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
 id image_name
 id info
-id infoTextBmi
 id invisible
 id italic
 id item_touch_helper_previous_elevation

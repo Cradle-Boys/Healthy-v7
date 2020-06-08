@@ -72,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:fontFamily="@font/righteous"
-                        android:text="0"
+                        android:text="4613"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="24sp" />
@@ -124,7 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:fontFamily="@font/righteous"
-                        android:text="3000"
+                        android:text="30000"
                         android:textAlignment="center"
                         android:textColor="@color/statusBarColor"
                         android:textSize="24sp" />
@@ -270,7 +270,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-10dp"
                         android:fontFamily="@font/righteous"
-                        android:text="0"
+                        android:text="153"
                         android:textColor="@android:color/black"
                         android:textSize="27sp"
                         android:textStyle="bold" />

@@ -92,7 +92,18 @@ public class BMIFragment extends Fragment {
             heightValue = Double.parseDouble(heightString);
 
             bmi = weightValue / (heightValue * heightValue);
-            bmiString = "Your BMI is " + bmi;
+            if(bmi<18.5){
+                bmiTextBox.setTextColor(0x880022FF);
+            }else if(bmi<25){
+                bmiTextBox.setTextColor(0xFF00FF00);
+            }else if(bmi<30){
+                bmiTextBox.setTextColor(0xFFFFFF00);
+            }else if(bmi<35){
+                bmiTextBox.setTextColor(0xFFFFA500);
+            }else{
+                bmiTextBox.setTextColor(0xFFFF0000);
+            }
+            bmiString = "Your BMI: \n"+String.format("%.2f", bmi) ;
             bmiTextBox.setText(bmiString);
 
         } catch(NumberFormatException npe){

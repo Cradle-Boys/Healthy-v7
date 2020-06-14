@@ -276,7 +276,7 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         if (user != null) {
             String name = user.getDisplayName();
             if (name == null) {
-                Toast.makeText(this, "name is null", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "name is null", Toast.LENGTH_SHORT).show();
                 // If the above were null, iterate the provider data
                 // and set with the first non null data
                 for (UserInfo userInfo : user.getProviderData()) {

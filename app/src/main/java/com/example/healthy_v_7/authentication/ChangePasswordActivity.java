@@ -3,6 +3,8 @@ package com.example.healthy_v_7.authentication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -22,9 +24,11 @@ import com.google.firebase.auth.FirebaseUser;
 public class ChangePasswordActivity extends AppCompatActivity {
 
     Button changePasswordButton;
+    EditText oldPassEditText;
     EditText newPassEditText;
     EditText confirmNewPassEditText;
     TextView confirmationTextView;
+
     CountDownTimer countDownTimer;
 
     int timerTime;
@@ -38,7 +42,13 @@ public class ChangePasswordActivity extends AppCompatActivity {
         newPassEditText=findViewById(R.id.newPassEditText);
         confirmNewPassEditText=findViewById(R.id.confirmNewPassEditText);
         confirmationTextView=findViewById(R.id.confirmationTextView);
+        oldPassEditText=findViewById(R.id.oldPassEditText);
         timerTime= 1503;//1.503 seconds
+
+        final String oldPass;
+
+        SharedPreferences sharedPreferences = getSharedPreferences("saved", Context.MODE_PRIVATE);
+        oldPass=sharedPreferences.getString("oldPassword","default");
 
         changePasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +56,18 @@ public class ChangePasswordActivity extends AppCompatActivity {
 
                 String newpass = newPassEditText.getText().toString();
                 String confirmNewPass=confirmNewPassEditText.getText().toString();
-                if(newpass.equals("")){
+                if(!(confirmNewPass.equals(oldPass))){
+                    confirmationTextView.setTextColor(0XFFB53737);
+                    confirmationTextView.setBackgroundColor(0XFFFFFFFF);
+                    confirmationTextView.setText("The old password is not correct.");
+                    confirmationTextView.animate().alpha(1).setDuration(1000).setInterpolator(new DecelerateInterpolator()).withEndAction(new Runnable() {
+                        @Override
+                        public void run() {
+                            confirmationTextView.animate().alpha(0).setDuration(1000).setInterpolator(new AccelerateInterpolator()).start();
+                        }
+                    }).start();
+                }
+                else if(newpass.equals("")){
                     confirmationTextView.setTextColor(0XFFB53737);
                     confirmationTextView.setBackgroundColor(0XFFFFFFFF);
                     confirmationTextView.setText("Please enter your new password.");

@@ -94,6 +94,7 @@ public class RegisterActivity1 extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d("tag", "createUserWithEmail:success");
                                 Toast.makeText(RegisterActivity1.this, "Account creation success!", Toast.LENGTH_SHORT).show();
+                                sharedPreferences.edit().putString("oldPassword",passwordEditText.getText().toString()).apply();
                                 finish();
                                 /*
                                 FirebaseUser user = mAuth.getCurrentUser();

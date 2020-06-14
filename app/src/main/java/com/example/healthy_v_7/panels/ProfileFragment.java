@@ -39,7 +39,6 @@ public class ProfileFragment extends Fragment {
     TextView nameTextView;
     TextView bioTextView;
     ImageView profileImageView;
-    Button shopButton;
     Button achievementsButton;
     BottomNavigationView bottomNavigationView;
 
@@ -124,14 +123,7 @@ public class ProfileFragment extends Fragment {
                     }
                 };
         sharedPreferences.registerOnSharedPreferenceChangeListener(prefListener);
-
-        shopButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bottomNavigationView.setSelectedItemId(R.id.nav_shop);
-            }
-        });
-
+        
 
     }
 
@@ -143,7 +135,6 @@ public class ProfileFragment extends Fragment {
         nameTextView = rootView.findViewById(R.id.nameTextView);
         bioTextView = rootView.findViewById(R.id.bioTextView);
         profileImageView = rootView.findViewById(R.id.profilePic_imageView);
-        shopButton = rootView.findViewById(R.id.shopButton);
         achievementsButton = rootView.findViewById(R.id.achievementsButton);
         bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
 

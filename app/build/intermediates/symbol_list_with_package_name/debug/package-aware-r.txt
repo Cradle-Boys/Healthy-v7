@@ -1758,6 +1758,7 @@ id group_divider
 id groups
 id healthy_2_1
 id heightInput
+id heightTextView
 id hideable
 id home
 id homeAsUp
@@ -1783,6 +1784,7 @@ id left
 id light
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id loginButton
@@ -1836,6 +1838,7 @@ id notification_main_column
 id notification_main_column_container
 id nutrition_web_view
 id off
+id oldPassEditText
 id on
 id outline
 id packed
@@ -1970,6 +1973,7 @@ id view_offset_helper
 id visible
 id webView
 id weightInput
+id weightTextView
 id wide
 id withText
 id withinBounds

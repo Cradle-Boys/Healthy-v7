@@ -90,7 +90,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/weightTextView"
+                    android:id="@+id/weight_text_view_dynamic"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="24dp"

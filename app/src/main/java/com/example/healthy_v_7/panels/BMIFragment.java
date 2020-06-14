@@ -1,9 +1,12 @@
 package com.example.healthy_v_7.panels;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +33,8 @@ public class BMIFragment extends Fragment {
     private Button calculateButton;
     private TextView bmiTextBox;
     private String bmiString;
+    private Button saveButton;
+    SharedPreferences sharedPreferences;
 
     public BMIFragment() {
         // Required empty public constructor
@@ -68,6 +73,25 @@ public class BMIFragment extends Fragment {
         height = rootView.findViewById(R.id.heightInput);
         bmiTextBox = rootView.findViewById(R.id.bmiResult);
         calculateButton = rootView.findViewById(R.id.calculateButton);
+        saveButton = rootView.findViewById(R.id.saveButton);
+        sharedPreferences = getActivity().getSharedPreferences("saved",Context.MODE_PRIVATE);
+
+
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            String saveweight;
+            String saveheight;
+            @Override
+            public void onClick(View v) {
+                Log.i("save","saved h and w");
+
+                saveweight=weight.getText().toString();
+                saveheight=height.getText().toString();
+                sharedPreferences.edit().putString("currentWeight",saveweight).commit();
+                sharedPreferences.edit().putString("currentHeight",saveheight).commit();
+
+            }
+        });
 
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override

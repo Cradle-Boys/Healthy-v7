@@ -56,15 +56,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/heightInput" />
 
-        <Button
-            android:id="@+id/calculateButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="0dp"
-            android:text="Calculate"
             app:layout_constraintEnd_toEndOf="parent"
+            android:weightSum="2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+            app:layout_constraintTop_toBottomOf="@+id/weightInput">
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:text="save"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toStartOf="@id/calculateButton"
+                app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:text="Calculate"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+
+
+        </LinearLayout>
+
+
 
         <TextView
             android:id="@+id/bmiResult"
@@ -88,7 +113,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/calculateButton">
+            app:layout_constraintTop_toBottomOf="@+id/button_layout">
 
             <ImageView
                 android:id="@+id/imageView3"

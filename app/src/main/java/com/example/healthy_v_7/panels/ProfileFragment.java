@@ -42,6 +42,9 @@ public class ProfileFragment extends Fragment {
     Button achievementsButton;
     BottomNavigationView bottomNavigationView;
 
+    TextView weightTextView;
+    TextView heightTextView;
+
     SharedPreferences sharedPreferences;
     SharedPreferences.OnSharedPreferenceChangeListener prefListener;
 
@@ -115,11 +118,18 @@ public class ProfileFragment extends Fragment {
                     public void onSharedPreferenceChanged(SharedPreferences prefs,
                                                           String key) {
                         if (key.equals("bio")) {
-                            Toast.makeText(getActivity(), "bio changed", Toast.LENGTH_SHORT).show();
                             bioTextView.setText(sharedPreferences.getString("bio","bio here"));
+                            weightTextView.setText("hi");
                         }else if(key.equals("profile_pic")){
                             profileImageView.setImageResource(sharedPreferences.getInt("profile_pic",R.drawable.prof_icon_0));
                         }
+//                        else if(key.equals("currentHeight")){
+//                            heightTextView.setText(sharedPreferences.getString("currentHeight","Height"));
+//                        }else if(key.equals("currentWeight")){
+//                            String weight=sharedPreferences.getString("currentWeight","Weight");
+//                            weightTextView.setText(weight);
+////                            Log.i("preflistener","weight "+weight);
+//                        }
                     }
                 };
         sharedPreferences.registerOnSharedPreferenceChangeListener(prefListener);
@@ -136,13 +146,17 @@ public class ProfileFragment extends Fragment {
         bioTextView = rootView.findViewById(R.id.bioTextView);
         profileImageView = rootView.findViewById(R.id.profilePic_imageView);
         achievementsButton = rootView.findViewById(R.id.achievementsButton);
+        weightTextView = rootView.findViewById(R.id.weight_text_view_dynamic);
+        heightTextView = rootView.findViewById(R.id.heightTextView);
         bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
-
 
         sharedPreferences = getActivity().getSharedPreferences("saved",Context.MODE_PRIVATE);
         bioTextView.setText(sharedPreferences.getString("bio","put bio here"));
         profileImageView.setImageResource(sharedPreferences.getInt("profile_pic",R.drawable.prof_icon_default));
         sharedPreferences.edit().putString("bio",bioTextView.getText().toString()).apply();
+        weightTextView.setText((sharedPreferences.getString("currentWeight","Weight"))+" kg");
+        heightTextView.setText((sharedPreferences.getString("currentHeight","Height"))+" m");
+
 
         setListeners();
 

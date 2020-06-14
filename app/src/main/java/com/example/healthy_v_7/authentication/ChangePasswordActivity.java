@@ -47,16 +47,18 @@ public class ChangePasswordActivity extends AppCompatActivity {
 
         final String oldPass;
 
-        SharedPreferences sharedPreferences = getSharedPreferences("saved", Context.MODE_PRIVATE);
+        final SharedPreferences sharedPreferences = getSharedPreferences("saved", Context.MODE_PRIVATE);
         oldPass=sharedPreferences.getString("oldPassword","default");
 
         changePasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String newpass = newPassEditText.getText().toString();
+                String oldPassInput = oldPassEditText.getText().toString();
+                final String newpass = newPassEditText.getText().toString();
                 String confirmNewPass=confirmNewPassEditText.getText().toString();
-                if(!(confirmNewPass.equals(oldPass))){
+
+                if(!(oldPassInput.equals(oldPass))){
                     confirmationTextView.setTextColor(0XFFB53737);
                     confirmationTextView.setBackgroundColor(0XFFFFFFFF);
                     confirmationTextView.setText("The old password is not correct.");
@@ -66,8 +68,9 @@ public class ChangePasswordActivity extends AppCompatActivity {
                             confirmationTextView.animate().alpha(0).setDuration(1000).setInterpolator(new AccelerateInterpolator()).start();
                         }
                     }).start();
+                    return;
                 }
-                else if(newpass.equals("")){
+                if(newpass.equals("")){
                     confirmationTextView.setTextColor(0XFFB53737);
                     confirmationTextView.setBackgroundColor(0XFFFFFFFF);
                     confirmationTextView.setText("Please enter your new password.");
@@ -88,10 +91,10 @@ public class ChangePasswordActivity extends AppCompatActivity {
                             confirmationTextView.animate().alpha(0).setDuration(2000).setInterpolator(new AccelerateInterpolator()).start();
                         }
                     }).start();
-                }else if((confirmNewPass.length()<=6)){
+                }else if((confirmNewPass.length()<6)){
                     confirmationTextView.setTextColor(0XFFB53737);
                     confirmationTextView.setBackgroundColor(0XFFFFFFFF);
-                    confirmationTextView.setText("Please enter more than 6 characters");
+                    confirmationTextView.setText("Please enter more than 5 characters");
                     confirmationTextView.animate().alpha(1).setDuration(1000).setInterpolator(new DecelerateInterpolator()).withEndAction(new Runnable() {
                         @Override
                         public void run() {
@@ -110,6 +113,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                 confirmationTextView.setTextColor(0XFF03DAC5);
                                 confirmationTextView.setBackgroundColor(0XD4EB876E);
                                 confirmationTextView.setText("You successfully changed your password!");
+                                sharedPreferences.edit().putString("oldPass",newpass).apply();
                                 confirmationTextView.animate().alpha(1).setDuration(1000).setInterpolator(new DecelerateInterpolator()).withEndAction(new Runnable() {
                                     @Override
                                     public void run() {
@@ -122,7 +126,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                 confirmationTextView.setBackgroundColor(0XFFFFFFFF);
 
                                 Log.w("tag", "createUserWithEmail:failure", task.getException());
-                                confirmationTextView.setText("Database error. Try again later");
+                                confirmationTextView.setText("Database error. Try again later. Please sign in again");
                                 confirmationTextView.animate().alpha(1).setDuration(200).setInterpolator(new DecelerateInterpolator()).withEndAction(new Runnable() {
                                     @Override
                                     public void run() {

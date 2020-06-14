@@ -1668,8 +1668,8 @@ id bmi_fragment_container
 id bmi_frame_layout
 id bottom
 id bottom_navigation
-id button
 id buttonPanel
+id button_layout
 id calculateButton
 id calorie_layout
 id calories_text_view
@@ -1833,6 +1833,7 @@ id newPassEditText
 id noScroll
 id none
 id normal
+id note_text_view
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1869,6 +1870,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saveButton
 id save_bio_button
 id save_non_transition_alpha
 id save_overlay_view
@@ -1891,7 +1893,6 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
-id shopButton
 id shop_recycler_view
 id shortcut
 id showCustom
@@ -1973,7 +1974,7 @@ id view_offset_helper
 id visible
 id webView
 id weightInput
-id weightTextView
+id weight_text_view_dynamic
 id wide
 id withText
 id withinBounds

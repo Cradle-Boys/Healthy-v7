@@ -123,7 +123,7 @@ public class ProfileFragment extends Fragment {
                     }
                 };
         sharedPreferences.registerOnSharedPreferenceChangeListener(prefListener);
-        
+
 
     }
 

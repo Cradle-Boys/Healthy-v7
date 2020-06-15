@@ -1510,6 +1510,8 @@ drawable ic_gold_coin
 drawable ic_gold_pot
 drawable ic_healthy
 drawable ic_healthy_launcher_background
+drawable ic_history
+drawable ic_history_black
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1666,6 +1668,7 @@ id bmiButton
 id bmiResult
 id bmi_fragment_container
 id bmi_frame_layout
+id bmi_textView
 id bottom
 id bottom_navigation
 id buttonPanel
@@ -1710,6 +1713,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id date_textView
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1760,6 +1764,8 @@ id healthy_2_1
 id heightInput
 id heightTextView
 id hideable
+id historyButton
+id history_recycler_view
 id home
 id homeAsUp
 id homeNoNavConstraintLayout
@@ -2072,6 +2078,7 @@ layout fragment_achievements
 layout fragment_bmi
 layout fragment_edit_bio
 layout fragment_edit_profile_picture
+layout fragment_history
 layout fragment_home
 layout fragment_nutrition
 layout fragment_profile
@@ -2079,6 +2086,7 @@ layout fragment_settings
 layout fragment_shop
 layout layout_list_item
 layout layout_list_item_achievements
+layout layout_list_item_history
 layout layout_list_item_shop
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

@@ -54,7 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="205dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:orientation="vertical"
@@ -110,12 +110,13 @@
 
             </LinearLayout>
 
+
             <TextView
                 android:id="@+id/bioTextView"
                 android:layout_width="match_parent"
-                android:layout_height="93dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="0dp"
                 android:background="@drawable/cradlegreenrectangle"
                 android:fontFamily="@font/roboto"
@@ -124,19 +125,38 @@
                 android:text="THIS IS WHERE WE PUT BIO"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <Button
+                android:id="@+id/historyButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="-6dp"
+                android:backgroundTint="@color/cradleGreen"
+                android:drawableLeft="@drawable/ic_history"
+                android:fontFamily="@font/rubik"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="HISTORY"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bioTextView" />
 
             <Button
                 android:id="@+id/achievementsButton"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginEnd="0dp"
                 android:backgroundTint="@color/cradleGreen"
                 android:drawableLeft="@drawable/trophyicon"

@@ -41,6 +41,7 @@ public class ProfileFragment extends Fragment {
     ImageView profileImageView;
     Button achievementsButton;
     BottomNavigationView bottomNavigationView;
+    Button historyButton;
 
     TextView weightTextView;
     TextView heightTextView;
@@ -81,6 +82,16 @@ public class ProfileFragment extends Fragment {
 
     public void setListeners(){
 
+        historyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.edit_profilepic_fragment_container, new HistoryFragment())
+                        .addToBackStack("previousFragment")
+                        .commit();
+            }
+        });
+
         achievementsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +130,6 @@ public class ProfileFragment extends Fragment {
                                                           String key) {
                         if (key.equals("bio")) {
                             bioTextView.setText(sharedPreferences.getString("bio","bio here"));
-                            weightTextView.setText("hi");
                         }else if(key.equals("profile_pic")){
                             profileImageView.setImageResource(sharedPreferences.getInt("profile_pic",R.drawable.prof_icon_0));
                         }
@@ -149,6 +159,7 @@ public class ProfileFragment extends Fragment {
         weightTextView = rootView.findViewById(R.id.weight_text_view_dynamic);
         heightTextView = rootView.findViewById(R.id.heightTextView);
         bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
+        historyButton = rootView.findViewById(R.id.historyButton);
 
         sharedPreferences = getActivity().getSharedPreferences("saved",Context.MODE_PRIVATE);
         bioTextView.setText(sharedPreferences.getString("bio","put bio here"));

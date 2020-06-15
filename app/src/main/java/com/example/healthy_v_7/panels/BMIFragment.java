@@ -14,6 +14,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.healthy_v_7.R;
+import com.example.healthy_v_7.helper.ObjectSerializer;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,19 +82,55 @@ public class BMIFragment extends Fragment {
         saveButton = rootView.findViewById(R.id.saveButton);
         sharedPreferences = getActivity().getSharedPreferences("saved",Context.MODE_PRIVATE);
 
+        final String timeStamp = new SimpleDateFormat("dd-MM-yyyy").format(Calendar.getInstance().getTime());
+
+
+
 
 
         saveButton.setOnClickListener(new View.OnClickListener() {
             String saveweight;
             String saveheight;
+
             @Override
             public void onClick(View v) {
+                if(bmiTextBox.getText().toString().equals("")||bmiTextBox.getText().toString().equals("Calculate BMI first!")||bmiTextBox.getText().toString().equals("Data Saved")){
+                    bmiTextBox.setText("Calculate BMI first!");
+                    return;
+                }
                 Log.i("save","saved h and w");
+                ArrayList<String> bmi=new ArrayList<>();
+                ArrayList<String> date=new ArrayList<>();
+                try {
+                    bmi= (ArrayList<String>) ObjectSerializer.deserialize(
+                            sharedPreferences.getString("bmi",
+                                    ObjectSerializer.serialize(new ArrayList<String>())));
+                    date= (ArrayList<String>) ObjectSerializer.deserialize(
+                            sharedPreferences.getString("date",
+                                    ObjectSerializer.serialize(new ArrayList<String>())));
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
 
                 saveweight=weight.getText().toString();
                 saveheight=height.getText().toString();
                 sharedPreferences.edit().putString("currentWeight",saveweight).commit();
                 sharedPreferences.edit().putString("currentHeight",saveheight).commit();
+                bmi.add(bmiTextBox.getText().toString());
+                date.add(timeStamp);
+
+                try {
+                    sharedPreferences.edit().putString("bmi",ObjectSerializer.serialize(bmi)).apply();
+                    Log.i("bmi", ObjectSerializer.serialize(bmi));
+                    sharedPreferences.edit().putString("date",ObjectSerializer.serialize(date)).apply();
+                    Log.i("date", ObjectSerializer.serialize(date));
+                    bmiTextBox.setText("Data Saved");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -127,7 +169,7 @@ public class BMIFragment extends Fragment {
             }else{
                 bmiTextBox.setTextColor(0xFFFF0000);
             }
-            bmiString = "Your BMI: \n"+String.format("%.2f", bmi) ;
+            bmiString = "BMI: \n"+String.format("%.2f", bmi) ;
             bmiTextBox.setText(bmiString);
 
         } catch(NumberFormatException npe){
